@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Nest Corporate Housing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #293241;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .language-toggle {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+        }
+        h1, h2, h3 {
+            color: #3d5a80;
+        }
+        .contact {
+            background: #e0fbfc;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Urban_Nest_Logo.png" alt="Urban Nest Logo">
+        </div>
+        <h1>Urban Nest Corporate Housing</h1>
+        <p>Corporate homes in Gävle & Sandviken</p>
+    </header>
+
+    <div class="language-toggle">
+        <button onclick="showEnglish()">English</button> |
+        <button onclick="showSwedish()">Svenska</button>
+    </div>
+
+    <div class="container">
+        <div id="english">
+            <div class="section">
+                <h2>Welcome to Urban Nest</h2>
+                <p>Corporate housing in Gävle and Sandviken.</p>
+                <p>Whether you're relocating staff, on a temporary project, or need a furnished apartment for an extended stay — Urban Nest offers fully equipped, stylish homes for your business needs.</p>
+            </div>
+            <div class="section">
+                <h3>Our Locations</h3>
+                <p>Gävle & Sandviken - Modern apartments in prime locations close to public transport, offices, and local amenities.</p>
+            </div>
+            <div class="section">
+                <h3>What We Offer</h3>
+                <ul>
+                    <li>High-speed Wi-Fi</li>
+                    <li>Equipped kitchens</li>
+                    <li>Weekly cleaning</li>
+                    <li>Flexible lease terms</li>
+                    <li>Corporate invoicing</li>
+                    <li>Move-in ready</li>
+                    <li>24/7 support</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@urbannesthousing.com</p>
+                <p>Phone: +46 (0)10-123 45 67</p>
+            </div>
+        </div>
+
+        <div id="swedish" style="display:none;">
+            <div class="section">
+                <h2>Välkommen till Urban Nest</h2>
+                <p>Företagsbostäder i Gävle och Sandviken.</p>
+                <p>Oavsett om ni rekryterar ny personal, har ett tillfälligt projekt eller behöver en möblerad lägenhet för längre vistelse – Urban Nest erbjuder fullt utrustade, moderna hem anpassade för företag.</p>
+            </div>
+            <div class="section">
+                <h3>Våra Platser</h3>
+                <p>Gävle & Sandviken – Möblerade lägenheter i attraktiva områden nära kollektivtrafik, kontor och service.</p>
+            </div>
+            <div class="section">
+                <h3>Detta Erbjuder Vi</h3>
+                <ul>
+                    <li>Snabbt Wi-Fi</li>
+                    <li>Fullt utrustade kök</li>
+                    <li>Veckostädning</li>
+                    <li>Flexibla hyresperioder</li>
+                    <li>Fakturering</li>
+                    <li>Inflyttningsklara bostäder</li>
+                    <li>Support dygnet runt</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Kontakta oss</h3>
+                <p>Email: info@urbannesthousing.com</p>
+                <p>Telefon: +46 (0)10-123 45 67</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showEnglish() {
+            document.getElementById('english').style.display = 'block';
+            document.getElementById('swedish').style.display = 'none';
+        }
+        function showSwedish() {
+            document.getElementById('english').style.display = 'none';
+            document.getElementById('swedish').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
